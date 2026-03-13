@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Saved Tabs",
+    "version": "1.0.0",
+    "description": "Save tabs locally and reopen them later.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Saved Tabs",
+      "default_icon": {
+        "16": "icon-16.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+      }
+    },
+    "icons": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    },
+    "permissions": [
+      "tabs",
+      "storage"
+    ]
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Saved Tabs</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Saved Tabs</h1>
+      <button id="save-tab">Save Current Tab</button>
+    </header>
+
+    <section class="status">
+      <span id="status-message"></span>
+    </section>
+
+    <section class="folders">
+      <div class="folder-row">
+        <label for="folder-select">Folder</label>
+        <select id="folder-select"></select>
+      </div>
+      <div class="folder-row new-folder-row">
+        <input
+          id="new-folder-name"
+          type="text"
+          placeholder="New folder name"
+        />
+        <button id="add-folder">Add</button>
+      </div>
+    </section>
+
+    <section class="search">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search in this folder..."
+      />
+    </section>
+
+    <section>
+      <h2>Saved Links</h2>
+      <ul id="tabs-list"></ul>
+    </section>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
